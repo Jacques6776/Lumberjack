@@ -1,0 +1,24 @@
+:root {
+}
+
+.StatPanel {
+    flex-grow: 0;
+    background-color: rgb(47, 47, 47);
+    border-right-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    width: 25%;
+}
+
+.HeaderLabel {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    -unity-text-align: middle-center;
+}
+
+.StatLabel {
+    -unity-text-align: middle-center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
