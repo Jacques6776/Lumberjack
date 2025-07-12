@@ -9,7 +9,7 @@ namespace Scripts.Skill_System
 {
     public class PlayerSkillManager : MonoBehaviour
     {
-        private int strength = 10, dexterity = 10, intelligence = 10, wisdom = 10, charisma = 10, constitution = 10; //Stats
+        private int strength, dexterity, intelligence, wisdom, charisma, constitution; //Stats
         private int doubleJump, dash, teleport; //Unlockable abilities    
         [SerializeField]
         private int skillPoints;
@@ -33,6 +33,17 @@ namespace Scripts.Skill_System
 
         //the list containing the unlocked skills
         private List<ScriptableSkill> unlockedSkills = new List<ScriptableSkill>();
+
+        private void Awake()
+        {
+            strength = 10;
+            dexterity = 10;
+            intelligence = 10;
+            wisdom = 10;
+            charisma = 10; 
+            constitution = 10;
+            skillPoints = 10;
+        }
 
         public void GainSkillPoint()
         {
