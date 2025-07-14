@@ -33,4 +33,37 @@
     -unity-text-align: middle-center;
     color: rgb(255, 255, 255);
     font-size: 30px;
+    white-space: normal;
+}
+
+.SkillButton {
+    width: 128px;
+    height: 128px;
+    border-radius: 5px;
+}
+
+.SkillButton:hover {
+    border-width: 5px;
+    border-color: rgb(255, 231, 98);
+}
+
+.SkillButton:disabled {
+    border-width: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.SkillRow {
+    flex-grow: 1;
+    align-self: auto;
+    align-content: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.SkillTreeButton {
+    font-size: 30px;
+    width: 250px;
+    align-items: stretch;
+    align-self: center;
+    -unity-font-style: bold;
 }

@@ -24,7 +24,7 @@ MonoBehaviour:
   overwriteDescription: 0
   skillDescription: Bear Strength increases Strength by 5 point(s) and Dexterity
     by 10%.
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 1009049853055315898, guid: 7dabb1cb2c3d3424b8e41e4f5625ca08, type: 3}
   SkillPrerequisites: []
   skillTier: 1
   cost: 1

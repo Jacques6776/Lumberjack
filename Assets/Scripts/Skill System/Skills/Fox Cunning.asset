@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 365710d4108ae164dbc9f96f5b1aaf62, type: 3}
-  m_Name: Owl Wisdom
+  m_Name: Fox Cunning
   m_EditorClassIdentifier: 
   UpgradeData:
-  - statType: 3
-    skillIncreaseAmount: 10
-    isPercentage: 1
+  - statType: 2
+    skillIncreaseAmount: 5
+    isPercentage: 0
   isAbility: 0
-  skillName: Owl Wisdom
+  skillName: Fox Cunning
   overwriteDescription: 0
-  skillDescription: Owl Wisdom increases Wisdom by 10%.
-  skillIcon: {fileID: 2838464033401493198, guid: 9c4c6ef218d9f2b4ba2eeaf7e681d397, type: 3}
+  skillDescription: Fox Cunning increases Intelligence by 5 point(s).
+  skillIcon: {fileID: -2278440341621924931, guid: 1238def7cb1e4744e81e8e2f31e5d54e, type: 3}
   SkillPrerequisites:
   - {fileID: 11400000, guid: dbfb2dea59a9acf40bcaa5d1afbea43b, type: 2}
-  skillTier: 2
-  cost: 3
+  skillTier: 3
+  cost: 5
