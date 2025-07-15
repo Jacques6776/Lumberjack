@@ -10,14 +10,19 @@ public class UISkillDescriptionPanel : MonoBehaviour
     private Label skillNameLabel, skillDescriptionLabel, skillCostLabel, skillPreReqLabel;
     private Button purchaseSkillButton;
 
-    private void Awake()
-    {
-        uiManager = GetComponent<UIManager>();
-    }
+    //private void Awake()
+    //{
+    //    uiManager = GetComponent<UIManager>();
+    //}
 
     private void OnEnable()
     {
+        uiManager = GetComponent<UIManager>();
         UITalentButton.OnSkillButtonClicked += PopulateLabelText;
+
+        GatherLabelReferences();
+        var skill = uiManager.SkillLibrary.GetSkillsOfTier(1)[0];
+        PopulateLabelText(skill);
     }
 
     private void OnDisable()
@@ -26,12 +31,12 @@ public class UISkillDescriptionPanel : MonoBehaviour
         if (purchaseSkillButton != null) purchaseSkillButton.clicked -= PurchaseSkill;
     }
 
-    private void Start()
-    {
-        GatherLabelReferences();
-        var skill = uiManager.SkillLibrary.GetSkillsOfTier(1)[0];
-        PopulateLabelText(skill);
-    }
+    //private void Start()
+    //{
+    //    GatherLabelReferences();
+    //    var skill = uiManager.SkillLibrary.GetSkillsOfTier(1)[0];
+    //    PopulateLabelText(skill);
+    //}
 
     private void GatherLabelReferences()
     {
@@ -95,7 +100,7 @@ public class UISkillDescriptionPanel : MonoBehaviour
         }
         else
         {
-            purchaseSkillButton.text = "Purchased";
+            purchaseSkillButton.text = "Purchase";
             purchaseSkillButton.SetEnabled(true);
         }
     }

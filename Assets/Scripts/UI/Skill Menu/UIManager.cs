@@ -20,16 +20,23 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private List<UITalentButton> talentButtons;
 
-    private void Awake()
+    //private void Awake()
+    //{
+    //    uiDocument = GetComponent<UIDocument>();
+    //    playerSkillManager = FindFirstObjectByType<PlayerSkillManager>();
+    //}
+
+    private void OnEnable()
     {
         uiDocument = GetComponent<UIDocument>();
         playerSkillManager = FindFirstObjectByType<PlayerSkillManager>();
-    }
-
-    private void Start()
-    {
         CreateSkillButtons();
     }
+
+    //private void Start()
+    //{
+    //    CreateSkillButtons();
+    //}
 
     private void CreateSkillButtons()
     {

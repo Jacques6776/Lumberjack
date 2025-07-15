@@ -32,16 +32,27 @@ namespace Scripts.Skill_System
         public UnityAction OnSkillPointsChanged;
 
         //the list containing the unlocked skills
-        private List<ScriptableSkill> unlockedSkills = new List<ScriptableSkill>();
+        public List<ScriptableSkill> unlockedSkills = new List<ScriptableSkill>();
 
-        private void Awake()
+        //private void Awake()
+        //{
+        //    strength = 10;
+        //    dexterity = 10;
+        //    intelligence = 10;
+        //    wisdom = 10;
+        //    charisma = 10; 
+        //    constitution = 10;
+        //}
+
+        private void OnEnable()
         {
             strength = 10;
             dexterity = 10;
             intelligence = 10;
             wisdom = 10;
-            charisma = 10; 
+            charisma = 10;
             constitution = 10;
+
             skillPoints = 10;
         }
 
